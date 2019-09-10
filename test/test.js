@@ -15,5 +15,5 @@ it("should fetch a package.json", async () => {
 })
 
 it("should throw for 404 responses", async () => {
-  await expect(repoPackageJson("Jaid/404")).rejects.toThrow("404")
+  await expect(repoPackageJson("Jaid/404")).rejects.toThrow("Not Found")
 })
