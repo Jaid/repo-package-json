@@ -4,7 +4,10 @@
   "version": "0.1.0",
   "author": "Jaid <jaid.jsx@gmail.com> (https://github.com/Jaid)",
   "dependencies": {
-    "@babel/runtime": "^7.6.0"
+    "@babel/runtime": "^7.6.0",
+    "got": "^9.6.0",
+    "json5": "^2.1.0",
+    "normalize-package-data": "^2.5.0"
   },
   "devDependencies": {
     "acorn": "^7.0.0",

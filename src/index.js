@@ -1,23 +1,21 @@
 /** @module repo-package-json */
+import got from "got"
+import json5 from "json5"
+import normalizePackageData from "normalize-package-data"
 
 /**
  * @function
- * @param {number} [compareValue]
- * @returns {number} Seconds passed since Unix epoch (01 January 1970)
+ * @async
+ * @param {string} [repositorySlug]
+ * @returns {import("normalize-package-data").Package}
  * @example
  * import repoPackageJson from "repo-package-json"
- * const result = repoPackageJson()
- * result === 1549410770
- * setTimeout(() => {
- *   const result2 = repoPackageJson(result)
- *   result2 === 3
- * }, 3000)
+ * const result = await repoPackageJson("Jaid/epoch-seconds")
+ * result.version === "2.0.3"
  */
-export default compareValue => {
-  const seconds = Math.floor(Date.now() / 1000)
-  if (compareValue === undefined) {
-    return seconds
-  } else {
-    return seconds - compareValue
-  }
+export default async repositorySlug => {
+  const result = await got(`https://raw.githubusercontent.com/${repositorySlug}/master/package.json`)
+  const pkg = json5.parse(result.body)
+  normalizePackageData(pkg)
+  return pkg
 }

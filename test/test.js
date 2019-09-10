@@ -7,7 +7,13 @@ const indexModule = (process.env.MAIN ? path.resolve(process.env.MAIN) : path.jo
  */
 const {default: repoPackageJson} = indexModule
 
-it("should run", () => {
-  const result = repoPackageJson()
-  expect(result).toBeGreaterThan(1549410770)
+it("should fetch a package.json", async () => {
+  const result = await repoPackageJson("Jaid/epoch-seconds")
+  expect(result).toMatchObject({
+    webpackConfigJaid: "universalLib",
+  })
+})
+
+it("should throw for 404 responses", async () => {
+  await expect(repoPackageJson("Jaid/404")).rejects.toThrow("404")
 })
