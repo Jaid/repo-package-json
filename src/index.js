@@ -1,7 +1,7 @@
 /** @module repo-package-json */
 import got from "got"
 import json5 from "json5"
-import normalizePackageData from "normalize-package-data"
+// import normalizePackageData from "normalize-package-data"
 
 /**
  * @function
@@ -16,6 +16,6 @@ import normalizePackageData from "normalize-package-data"
 export default async repositorySlug => {
   const result = await got(`https://raw.githubusercontent.com/${repositorySlug}/master/package.json`)
   const pkg = json5.parse(result.body)
-  normalizePackageData(pkg)
+  // normalizePackageData(pkg) It uses require("fs") for readme check, not compatible with my universal build
   return pkg
 }
