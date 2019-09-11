@@ -1,8 +1,8 @@
 /** @module repo-package-json */
 
 import json5 from "json5"
-import ky from "ky-universal"
-import normalizePackageData from "normalize-package-data"
+import got from "got"
+// import normalizePackageData from "normalize-package-data"
 
 /**
  * @function
@@ -15,8 +15,8 @@ import normalizePackageData from "normalize-package-data"
  * result.version === "2.0.3"
  */
 export default async repositorySlug => {
-  const body = await ky(`https://raw.githubusercontent.com/${repositorySlug}/master/package.json`).text()
-  const pkg = json5.parse(body)
-  normalizePackageData(pkg)
+  const response = await got(`https://raw.githubusercontent.com/${repositorySlug}/master/package.json`)
+  const pkg = json5.parse(response.body)
+  // normalizePackageData(pkg) It uses require("fs") for readme check, not compatible with my universal build
   return pkg
 }

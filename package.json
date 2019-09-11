@@ -1,20 +1,18 @@
 {
   "private": true,
-  "webpackConfigJaid": "universalLib",
+  "webpackConfigJaid": "nodeLib",
   "version": "0.1.0",
   "author": "Jaid <jaid.jsx@gmail.com> (https://github.com/Jaid)",
   "dependencies": {
     "@babel/runtime": "^7.6.0",
-    "json5": "^2.1.0",
-    "ky": "^0.14.0",
-    "ky-universal": "^0.3.0",
-    "normalize-package-data": "^2.5.0"
+    "browserslist-config-jaid-node": "^2.2.2",
+    "got": "^9.6.0",
+    "json5": "^2.1.0"
   },
   "devDependencies": {
     "acorn": "^7.0.0",
     "babel-jest": "^24.9.0",
     "babel-preset-jaid": "^6.9.4",
-    "browserslist-config-jaid-universal": "^2.1.0",
     "eslint": "^6.3.0",
     "eslint-config-jaid": "^1.29.0",
     "jest": "^24.9.0",
