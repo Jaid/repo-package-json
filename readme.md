@@ -3,6 +3,15 @@
 
 Fetches the package.json content from a GitHub repository.
 
+## Installation
+<a href='https://npmjs.com/package/repo-package-json'><img alt='npm logo' src='https://raw.githubusercontent.com/npm/logos/master/npm%20logo/npm-logo-red.png' height=16/></a>
+```bash
+npm install --save repo-package-json@^
+```
+<a href='https://yarnpkg.com/package/repo-package-json'><img alt='Yarn logo' src='https://raw.githubusercontent.com/yarnpkg/assets/master/yarn-kitten-full.png' height=24/></a>
+```bash
+yarn add repo-package-json@^
+```
 
 
 ## Try it out
