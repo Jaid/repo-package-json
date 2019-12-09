@@ -4,31 +4,16 @@
 Fetches the package.json content from a GitHub repository.
 
 ## Installation
-<a href='https://npmjs.com/package/repo-package-json'><img alt='npm logo' src='https://raw.githubusercontent.com/npm/logos/master/npm%20logo/npm-logo-red.png' height=16/></a>
+<a href='https://npmjs.com/package/repo-package-json'><img alt='npm logo' src='https://github.com/Jaid/action-readme/raw/master/images/base-assets/npm.png'/></a>
 ```bash
-npm install --save repo-package-json@^
+npm install --save repo-package-json@^1.0.0
 ```
-<a href='https://yarnpkg.com/package/repo-package-json'><img alt='Yarn logo' src='https://raw.githubusercontent.com/yarnpkg/assets/master/yarn-kitten-full.png' height=24/></a>
+<a href='https://yarnpkg.com/package/repo-package-json'><img alt='Yarn logo' src='https://github.com/Jaid/action-readme/raw/master/images/base-assets/yarn.png'/></a>
 ```bash
-yarn add repo-package-json@^
+yarn add repo-package-json@^1.0.0
 ```
 
 
-## Try it out
-Open a browser's JavaScript console and execute:
-
-```javascript
-const scriptElement = document.createElement("script");
-scriptElement.setAttribute("type","text/javascript");
-scriptElement.setAttribute("src","https://unpkg.com/repo-package-json@1.0.0");
-document.querySelector("head").appendChild(scriptElement);
-```
-
-The module is now loaded in a variable.
-
-```javascript
-typeof repo-package-json.default
-```
 
 
 ## License
