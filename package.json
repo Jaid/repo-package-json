@@ -32,5 +32,6 @@
     "prepareActionJest": "npm run build:prod"
   },
   "name": "repo-package-json",
-  "description": "Fetches the package.json content from a GitHub repository."
+  "description": "Fetches the package.json content from a GitHub repository.",
+  "funding": "https://github.com/sponsors/jaid"
 }
