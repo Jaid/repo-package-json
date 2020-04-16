@@ -37,5 +37,7 @@
   "repository": {
     "type": "git",
     "url": "https://github.com/jaid/repo-package-json"
-  }
+  },
+  "homepage": "https://github.com/Jaid/repo-package-json",
+  "keywords": []
 }
