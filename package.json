@@ -38,5 +38,21 @@
     "url": "https://github.com/jaid/repo-package-json"
   },
   "homepage": "https://github.com/Jaid/repo-package-json",
-  "keywords": []
+  "keywords": [
+    "fetch",
+    "got",
+    "json",
+    "lib",
+    "library",
+    "node",
+    "node-js",
+    "nodejs",
+    "npm",
+    "npm-api",
+    "package-json",
+    "pkg",
+    "promise",
+    "util",
+    "utility"
+  ]
 }
